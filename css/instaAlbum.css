@@ -2,6 +2,10 @@ body {
     background-color:  #ffffbd;
 }
 
+.likes-comments{
+    margin-bottom:5px !important;
+}
+
 .navbar {
     position: fixed;
     left: 0;
@@ -28,7 +32,7 @@ body {
 }
 .card {
     margin-top: 3.5rem;
-    border-radius: 20px;
+    border-radius: 3px;
 }
 .card .header {
     padding: 5px 10px;
@@ -50,11 +54,24 @@ body {
 }
 .footer {
     margin-top: 10vh;
-    padding: 2rem 1.5rem;
+    padding: 2rem 1rem;
 }
 
-.image {
+.timeline-image {
     object-fit: scale-down;
+}
+
+.emoji-icon {
+    font-size:1.5rem;
+}
+
+.profile-image {
+    border: thin solid #535350;
+}
+
+.timeline-card {
+    border-top:thin solid rgba(211, 211, 211, 0.3);
+    border-bottom:thin solid rgba(211, 211, 211, 0.3);
 }
 
 /* #main-sidebar  */
