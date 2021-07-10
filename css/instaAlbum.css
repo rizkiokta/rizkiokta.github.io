@@ -89,6 +89,20 @@ body {
     top:3.25rem;
 }
 
+video {
+    display:block;
+}
+
+.timeline-video {
+    /* width:640px; */
+    margin: auto;
+    display:block;
+    text-align: center;
+}
+
+/* iframe {
+    display:block;
+} */
 /* @media screen and (max-width: 786px){
     .navbar {
         justify-content: space-between;

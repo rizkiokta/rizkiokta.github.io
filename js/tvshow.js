@@ -15,10 +15,12 @@ const displayImage = (images) => {
         if (result.show.image) {
             const container = document.createElement('DIV');
             const img = document.createElement('IMG');
-            const showTitle = document.createElement('h3');
+            const showTitle = document.createElement('span');
             img.src = result.show.image.medium;
             showTitle.textContent = result.show.name;
             container.className = "tvshow-container";
+            img.className = "tvshow-img";
+            showTitle.className = "tvshow-title";
             container.appendChild(img);
             container.appendChild(showTitle);
             resultContainer.appendChild(container);

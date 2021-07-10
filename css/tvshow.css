@@ -1,8 +1,23 @@
 .tvshow-container {
-    width: 210px;
-    display: inline-block !important;
+    width: 240px;
+    margin: 10px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.tvshow-img {
+    width:316px;
+}
+
+.tvshow-title {
+    font-weight: bold;
+    display:block;
+    text-align: center;
 }
 
 #result-container {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
