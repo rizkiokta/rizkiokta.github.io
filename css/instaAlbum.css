@@ -74,6 +74,28 @@ body {
     border-bottom:thin solid rgba(211, 211, 211, 0.3);
 }
 
+.annoying-ads {
+    display:none;
+    
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
 /* #main-sidebar  */
 #ads{
     /* background-color:black; */
@@ -89,6 +111,8 @@ body {
     top:3.25rem;
 }
 
+
+
 video {
     display:block;
 }
@@ -98,6 +122,26 @@ video {
     margin: auto;
     display:block;
     text-align: center;
+}
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* iframe {
